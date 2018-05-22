@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<faces-config version="2.2"
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+              xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_2.xsd">
+    <navigation-rule>
+        <from-view-id>/index.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>Mujer &lt; 18 años</from-outcome>
+            <to-view-id>/rosado.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Mujeres &gt; 18 años</from-outcome>
+            <to-view-id>/rojo.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Hombre &gt; 18 años</from-outcome>
+            <to-view-id>/gris.xhtml</to-view-id>
+        </navigation-case>
+        <navigation-case>
+            <from-outcome>Hombre &lt; 18 años</from-outcome>
+            <to-view-id>/azul.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/gris.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>desc dia par</from-outcome>
+            <to-view-id>/grisdesc.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/azul.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>desc dia par</from-outcome>
+            <to-view-id>/azuldesc.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/rojo.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>desc dia par</from-outcome>
+            <to-view-id>/rojodesc.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+    <navigation-rule>
+        <from-view-id>/rosado.xhtml</from-view-id>
+        <navigation-case>
+            <from-outcome>desc dia par</from-outcome>
+            <to-view-id>/rosadodesc.xhtml</to-view-id>
+        </navigation-case>
+    </navigation-rule>
+</faces-config>

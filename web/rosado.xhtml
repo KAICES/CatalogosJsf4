@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>CATALOGO MUJERES</title>
+        
+                <style type ="text/css">
+                    body{background:bisque}               
+                </style>
+        
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGroup>
+            <h:dataTable value="#{catalogoBb.miLista}" var="usuario" border="0" cellpadding="0">
+                <h:column rowHeader="usuario">
+                    <h:outputText value="#{usuario.nombreVo}"></h:outputText>                    
+                </h:column>
+                <h:column rowHeader="genero">                
+                    <h:outputText value="#{usuario.generoVo}"></h:outputText>                    
+                </h:column>    
+                <h:column rowHeader="edad">                
+                    <h:outputText value="#{usuario.edadVo}"></h:outputText>                    
+                </h:column>
+                
+            </h:dataTable>             
+            <h:commandButton value="atras" action="index"/>   
+            
+            <h:panelGrid columns="2" border="1" cellpadding="2">
+             
+                
+                    <h:outputText value ="PRODUCTO"></h:outputText> 
+                    <h:outputText value ="PRECIO"></h:outputText>  
+                    <h:outputText value ="Guantes"></h:outputText>  
+                    <h:outputText value ="$ 5000"></h:outputText>  
+                    <h:outputText value ="Moña"></h:outputText>  
+                    <h:outputText value ="$ 1000"></h:outputText>  
+                    <h:outputText value ="Manillas"></h:outputText>  
+                    <h:outputText value ="$ 10000"></h:outputText>  
+                    <h:outputText value ="Shakiras"></h:outputText>  
+                    <h:outputText value ="$ 100"></h:outputText> 
+                    <h:outputText value ="Anillo"></h:outputText>  
+                    <h:outputText value ="$ 5000"></h:outputText>  
+                    
+                 
+            </h:panelGrid>
+            
+        </h:panelGroup>    
+        </h:form>
+    </h:body>
+</html>

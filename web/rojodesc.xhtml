@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>CATALOGO MUJERES</title>
+        
+                <style type ="text/css">
+                    body{background:red}               
+                </style>
+        
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:dataTable value="#{catalogoBb.miLista}" var="usuario" border="0" cellpadding="0">
+                <h:column rowHeader="nombre">
+                    <h:outputText value="#{usuario.nombreVo}"></h:outputText>                    
+                </h:column>
+                <h:column rowHeader="genero">                
+                    <h:outputText value="#{usuario.generoVo}"></h:outputText>                    
+                </h:column>   
+                <h:column rowHeader="genero">                
+                    <h:outputText value="#{usuario.edadVo}"></h:outputText>                    
+                </h:column> 
+            </h:dataTable>             
+            Hoy,por ser dia par, aplica el 20% de descuento en todo el catalogo
+            <h:panelGrid columns="2" border="1" cellpadding="2">
+             
+                
+                    <h:outputText value ="PRODUCTO"></h:outputText> 
+                    <h:outputText value ="PRECIO"></h:outputText>  
+                    <h:outputText value ="Labial"></h:outputText>  
+                    <h:outputText value ="$ 4000"></h:outputText>  
+                    <h:outputText value ="Esmalte"></h:outputText>  
+                    <h:outputText value ="$ 2400"></h:outputText>  
+                    <h:outputText value ="Cortauñas"></h:outputText>  
+                    <h:outputText value ="$ 5600"></h:outputText>  
+                    <h:outputText value ="Medias Veladas"></h:outputText>  
+                    <h:outputText value ="$ 4000"></h:outputText> 
+                    <h:outputText value ="Brillo"></h:outputText>  
+                    <h:outputText value ="$ 800"></h:outputText>  
+                    <h:outputText value ="Base"></h:outputText>  
+                    <h:outputText value ="$ 1600"></h:outputText>                     
+                 
+            </h:panelGrid>
+            <h:commandButton value="volver" action="index"/>  
+        </h:form>  
+    </h:body>
+</html>
